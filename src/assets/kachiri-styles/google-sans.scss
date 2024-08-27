@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'Google Sans';
+  src: url('../fonts/GoogleSans-Regular.ttf') format("truetype");
+  font-display: block;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Google Sans Medium';
+  src: url('../fonts/GoogleSans-Medium.ttf') format("truetype");
+  font-display: block;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Google Sans Bold';
+  src: url('../fonts/GoogleSans-Bold.ttf') format("truetype");
+  font-display: block;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Google Sans Italic';
+  src: url('../fonts/GoogleSans-Italic.ttf') format("truetype");
+  font-display: block;
+  font-style: italic;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Google Sans Medium Italic';
+  src: url('../fonts/GoogleSans-MediumItalic.ttf') format("truetype");
+  font-display: block;
+  font-style: italic;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Google Sans Bold Italic';
+  src: url('../fonts/GoogleSans-BoldItalic.ttf') format("truetype");
+  font-display: block;
+  font-style: italic;
+  font-weight: 700;
+}
+
+$f-family-bold-italic: 'Google Sans Bold Italic';
+$f-family-bold: 'Google Sans Bold';
+$f-family-italic: 'Google Sans Italic';
+$f-family-medium-italic: 'Google Sans Medium Italic';
+$f-family-medium: 'Google Sans Medium';
+$f-family-regular: 'Google Sans';
+
+.kc-bold-italic {
+  font-family: $f-family-bold-italic;
+}
+
+.kc-bold {
+  font-family: $f-family-bold;
+}
+
+.kc-italic {
+  font-family: $f-family-italic;
+}
+
+.kc-medium-italic {
+  font-family: $f-family-medium-italic;
+}
+
+.kc-medium {
+  font-family: $f-family-medium;
+}
+
+.kc-regular {
+  font-family: $f-family-regular;
+}
