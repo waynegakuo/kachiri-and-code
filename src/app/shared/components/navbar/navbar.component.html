@@ -1,0 +1,49 @@
+<nav class="py-4 flex justify-between items-center">
+
+  <!-- Left side of Nav -->
+  <div class="flex items-center">
+    <span [routerLink]="['']"
+          class="text-2xl text-white font-bold hover:text-gray-500 cursor-pointer kc-bold">
+      Kachiri & Code
+    </span>
+  </div>
+
+  <!-- Right side of nav -->
+  <div class="hidden flex-row md:flex kc-medium text-white">
+    <a [routerLink]="['']" routerLinkActive="router-link-active"
+       class="inline-block p-2 font-bold mr-2 hover:text-gray-500">About</a>
+
+    <a [routerLink]="['']" routerLinkActive="router-link-active"
+       class="inline-block p-2 font-bold mr-2 hover:text-gray-500">FAQ</a>
+    <a [routerLink]="['']" routerLinkActive="router-link-active"
+       class="inline-block p-2 font-bold mr-2 hover:text-gray-500">Sponsors</a>
+    <a [routerLink]="['']"
+       routerLinkActive="router-link-active"
+       class="hover:text-gray-500 border-2 border-white inline-block py-2 px-4 rounded font-semibold transition ease-in duration-150"
+    >
+      Sign Up
+    </a>
+  </div>
+
+  <div class="flex flex-row md:hidden">
+
+    <ng-container>
+      <mat-icon class="cursor-pointer" [matMenuTriggerFor]="menu">menu</mat-icon>
+    </ng-container>
+  </div>
+
+
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item [routerLink]="['']" [routerLinkActiveOptions]="{ exact: true }"
+            routerLinkActive="active">Home
+    </button>
+    <button mat-menu-item [routerLink]="['login']"
+            [routerLinkActiveOptions]="{ exact: true }"
+            routerLinkActive="active">Login
+    </button>
+    <button mat-menu-item [routerLink]="['signup']"
+            [routerLinkActiveOptions]="{ exact: true }"
+            routerLinkActive="active">Sign up
+    </button>
+  </mat-menu>
+</nav>
